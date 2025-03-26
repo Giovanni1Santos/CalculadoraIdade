@@ -1,6 +1,6 @@
 body{
   font-family: 'Times New Roman', Times, serif;
-  background: linear-gradient(90deg, #00c9FF 0%, #92fe9d 100%);
+  background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ body{
 .age-calculator h1{
   font-size: 60px;
   margin: 20px;
-  background: linear-gradient(90deg, #00c9FF 0%, #92fe9d 100%);
+  background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -38,7 +38,7 @@ body{
 }
 
 .age-calculator button{
-  background: linear-gradient(90deg, #00c9FF 0%, #92fe9d 100%);
+  background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   color: #fff;
   border: none;
   padding: 10px 20px;
