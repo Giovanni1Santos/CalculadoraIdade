@@ -14,14 +14,14 @@ body {
 .age-calculator {
   background-color: #fff;
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 500px;
   height: auto;
   max-height: 85vh;
   overflow-y: auto;
@@ -29,8 +29,8 @@ body {
 }
 
 .age-calculator h1 {
-  font-size: 3vh;
-  margin-bottom: 25px;
+  font-size: 4vw;
+  margin-bottom: 20px;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
   background-clip: text;
@@ -39,67 +39,52 @@ body {
 
 .age-calculator input[type=date] {
   border-radius: 10px;
-  width: 90%;
-  padding: 15px;
-  margin-bottom: 15px;
-  font-size: 22px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .age-calculator button {
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   color: #fff;
   border: none;
-  padding: 15px 30px;
+  padding: 12px;
   border-radius: 12px;
   cursor: pointer;
-  font-size: 22px;
-  width: 90%;
+  font-size: 18px;
+  width: 100%;
 }
 
 .age-calculator .result {
-  margin-top: 20px;
-  font-size: 22px;
+  margin-top: 15px;
+  font-size: 18px;
   word-wrap: break-word;
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+/* Ajustes para tablets */
+@media (max-width: 768px) {
   .age-calculator {
-    width: 75%;
-    max-width: 600px;
+    width: 95%;
+    padding: 15px;
+    max-height: 80vh;
   }
   .age-calculator h1 {
     font-size: 5vw;
   }
 }
 
-@media (max-width: 768px) {
-  .age-calculator {
-    width: 85%;
-    padding: 20px;
-    max-height: 80vh;
-  }
-  .age-calculator h1 {
-    font-size: 6vw;
-  }
-  .age-calculator input[type=date],
-  .age-calculator button {
-    font-size: 18px;
-    width: 95%;
-  }
-  .age-calculator .result {
-    font-size: 18px;
-  }
-}
-
+/* Ajustes para celulares */
 @media (max-width: 480px) {
   .age-calculator {
     width: 95%;
-    max-height: 70vh;
+    max-width: 400px;
+    max-height: 75vh;
     padding: 15px;
   }
   .age-calculator h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .age-calculator input[type=date],
   .age-calculator button {
