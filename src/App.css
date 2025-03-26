@@ -25,7 +25,7 @@ body {
 }
 
 .age-calculator h1 {
-  font-size: 4vw;
+  font-size: 48px;
   margin: 20px;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
