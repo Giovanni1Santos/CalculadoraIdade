@@ -14,21 +14,21 @@ body {
 .age-calculator {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 600px;
   height: auto;
   max-height: 90vh;
   overflow-y: auto;
 }
 
 .age-calculator h1 {
-  font-size: 2vh;
+  font-size: 2.5vh;
   margin: 20px;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
@@ -38,34 +38,34 @@ body {
 
 .age-calculator input[type=date] {
   border-radius: 10px;
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
+  width: 85%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 20px;
 }
 
 .age-calculator button {
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 12px 25px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 18px;
-  width: 80%;
+  font-size: 20px;
+  width: 85%;
 }
 
 .age-calculator .result {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
   word-wrap: break-word;
   text-align: center;
 }
 
 @media (max-width: 1024px) {
   .age-calculator {
-    width: 80%;
-    max-width: 450px;
+    width: 85%;
+    max-width: 500px;
   }
   .age-calculator h1 {
     font-size: 5vw;
@@ -83,29 +83,29 @@ body {
   }
   .age-calculator input[type=date],
   .age-calculator button {
-    font-size: 16px;
+    font-size: 18px;
     width: 90%;
   }
   .age-calculator .result {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
   .age-calculator {
     width: 95%;
-    max-height: 80vh;
-    padding: 10px;
+    max-height: 75vh;
+    padding: 12px;
   }
   .age-calculator h1 {
     font-size: 7vw;
   }
   .age-calculator input[type=date],
   .age-calculator button {
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
   }
   .age-calculator .result {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
