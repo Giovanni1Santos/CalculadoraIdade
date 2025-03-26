@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Times New Roman', Times, serif;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   display: flex;
@@ -6,21 +6,25 @@ body{
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.age-calculator{
+.age-calculator {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0 ,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  max-width: 400px;
 }
 
-.age-calculator h1{
-  font-size: 60px;
+.age-calculator h1 {
+  font-size: 5vw;
   margin: 20px;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
@@ -28,27 +32,60 @@ body{
   color: transparent;
 }
 
-.age-calculator input[type=date]{
+.age-calculator input[type=date] {
   border-radius: 10px;
-  width: 50%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 10px;
-  display: flex;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.age-calculator button{
+.age-calculator button {
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
   border-radius: 10px;
-  font-size: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 80%;
 }
 
-.age-calculator .result{
+.age-calculator .result {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .age-calculator {
+    width: 100%;
+    padding: 15px;
+  }
+  .age-calculator h1 {
+    font-size: 7vw;
+  }
+  .age-calculator input[type=date],
+  .age-calculator button {
+    font-size: 16px;
+    width: 90%;
+  }
+  .age-calculator .result {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .age-calculator h1 {
+    font-size: 8vw;
+  }
+  .age-calculator input[type=date],
+  .age-calculator button {
+    font-size: 14px;
+    width: 100%;
+  }
+  .age-calculator .result {
+    font-size: 14px;
+  }
 }
