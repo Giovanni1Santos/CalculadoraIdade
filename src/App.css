@@ -28,7 +28,7 @@ body {
 }
 
 .age-calculator h1 {
-  font-size: clamp(20px, 4vw, 36px); /* Ajuste dinâmico para telas pequenas */
+  font-size: clamp(15px, 4vw, 36px); /* Ajuste dinâmico para telas pequenas */
   margin-bottom: 15px;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
