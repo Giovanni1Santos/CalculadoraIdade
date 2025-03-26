@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .age-calculator {
@@ -21,7 +22,9 @@ body {
   align-items: center;
   width: 90%;
   max-width: 500px;
-  min-height: 60vh;
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .age-calculator h1 {
@@ -63,7 +66,6 @@ body {
   .age-calculator {
     width: 80%;
     max-width: 450px;
-    min-height: 50vh;
   }
   .age-calculator h1 {
     font-size: 5vw;
@@ -74,7 +76,7 @@ body {
   .age-calculator {
     width: 90%;
     padding: 15px;
-    min-height: 55vh;
+    max-height: 85vh;
   }
   .age-calculator h1 {
     font-size: 6vw;
@@ -92,7 +94,8 @@ body {
 @media (max-width: 480px) {
   .age-calculator {
     width: 95%;
-    min-height: 60vh;
+    max-height: 80vh;
+    padding: 10px;
   }
   .age-calculator h1 {
     font-size: 7vw;
