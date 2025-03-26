@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
@@ -20,11 +20,12 @@ body {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
+  min-height: 60vh;
 }
 
 .age-calculator h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 20px;
   background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
   -webkit-background-clip: text;
@@ -58,13 +59,25 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .age-calculator {
-    width: 100%;
-    padding: 15px;
+    width: 80%;
+    max-width: 450px;
+    min-height: 50vh;
   }
   .age-calculator h1 {
-    font-size: 7vw;
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .age-calculator {
+    width: 90%;
+    padding: 15px;
+    min-height: 55vh;
+  }
+  .age-calculator h1 {
+    font-size: 6vw;
   }
   .age-calculator input[type=date],
   .age-calculator button {
@@ -77,8 +90,12 @@ body {
 }
 
 @media (max-width: 480px) {
+  .age-calculator {
+    width: 95%;
+    min-height: 60vh;
+  }
   .age-calculator h1 {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .age-calculator input[type=date],
   .age-calculator button {
