@@ -23,13 +23,15 @@ body {
 
 .title {
   text-align: center;
-  position: absolute;
-  font-size: 24px;
+  position: relative; /* Evita sobreposição */
+  font-size: 2vw; /* Ajusta o tamanho dinamicamente conforme a tela */
   color: #6a1b9a;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 5%; /* Usa porcentagem para espaçamento */
   font-family: 'Poppins', sans-serif;
+  top: 5vh; /* Mantém espaçamento proporcional à altura da tela */
 }
+
 
 
 .age-calculator h2 {
