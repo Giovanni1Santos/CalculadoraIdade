@@ -27,7 +27,7 @@ body {
   color: #6a1b9a;
   font-weight: bold;
   position: relative;
-  top: -10px; /* Moves h1 higher up */
+  top: -40px; /* Moves h1 higher up */
 }
 
 .age-calculator h2 {
@@ -37,7 +37,7 @@ body {
 }
 
 .barra_horizontal {
-  background-color: #6a1b9a;
+  background-color: #0a5c0a;
   height: 2px; /* Thinner line */
   width: 100%; /* Full width */
   margin: 0 auto 25px auto; /* Centered with space below */
