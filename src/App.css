@@ -13,7 +13,7 @@ body {
 .age-calculator {
   background-color: #fff;
   border-radius: 15px;
-  padding: 40px; 
+  padding: 50px; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   display: flex;
@@ -21,17 +21,16 @@ body {
   align-items: center;
   width: 90%;
   max-width: 600px;
-  min-height: 400px; 
-  height: auto; 
-  overflow: hidden; 
-  justify-content: space-evenly;
+  min-height: 450px;
+  height: auto;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .title h1 {
-  font-size: clamp(15px, 4vw, 36px); /* Ajuste dinâmico para telas pequenas */
-  margin-bottom: 25px;
-  -webkit-background-clip: text;
-  background-clip: text;
+  font-size: clamp(18px, 4vw, 36px);
+  margin-bottom: 20px;
   color: #2a8c76;
   font-weight: bold;
   word-wrap: break-word;
@@ -39,23 +38,24 @@ body {
   text-align: center;
 }
 
-.age-calculator h2{
-    color: #3fc1a6;
-    font-size: 24px;
-
+.age-calculator h2 {
+  color: #2a8c76;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
-.barra_horizontal{
+
+.barra_horizontal {
   background-color: #993399;
   height: 5px;
   width: 210px;
+  margin-bottom: 20px;
 }
-
 
 .age-calculator input[type="date"] {
   border-radius: 10px;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 12px;
+  margin-bottom: 20px;
   font-size: clamp(14px, 2vw, 18px);
 }
 
@@ -63,7 +63,7 @@ body {
   background: linear-gradient(#2a8c76, #3fc1a6);
   color: #fff;
   border: none;
-  padding: 12px;
+  padding: 14px;
   border-radius: 12px;
   cursor: pointer;
   font-size: clamp(14px, 2vw, 18px);
@@ -72,11 +72,11 @@ body {
 }
 
 .age-calculator button:hover {
-  background: linear-gradient(#2a8c76, #3fc1a6);
+  background: linear-gradient(#3fc1a6, #2a8c76);
 }
 
 .age-calculator .result {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: clamp(14px, 2vw, 18px);
   word-wrap: break-word;
   text-align: center;
@@ -86,10 +86,7 @@ body {
 @media (min-width: 1024px) {
   .age-calculator {
     max-width: 700px;
-    padding: 40px;
-  }
-  .age-calculator h1 {
-    font-size: 2.5vw;
+    padding: 50px;
   }
 }
 
@@ -99,9 +96,6 @@ body {
     width: 80%;
     max-width: 550px;
   }
-  .age-calculator h1 {
-    font-size: 5vw;
-  }
 }
 
 /* Celulares médios */
@@ -109,10 +103,7 @@ body {
   .age-calculator {
     width: 90%;
     max-width: 450px;
-    padding: 20px;
-  }
-  .age-calculator h1 {
-    font-size: 6vw;
+    padding: 30px;
   }
 }
 
@@ -121,15 +112,6 @@ body {
   .age-calculator {
     width: 95%;
     max-width: 350px;
-    padding: 15px;
-  }
-  .age-calculator h1 {
-    font-size: 7vw;
-    margin-bottom: 10px;
-  }
-  .age-calculator input[type="date"],
-  .age-calculator button {
-    font-size: 16px;
-    padding: 10px;
+    padding: 20px;
   }
 }
