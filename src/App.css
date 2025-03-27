@@ -13,43 +13,31 @@ body {
 .age-calculator {
   background-color: #fff;
   border-radius: 15px;
-  padding: 30px 25px;
+  padding: 40px 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 90%;
-  max-width: 500px;
-  min-height: 400px;
-  height: auto;
-  overflow: hidden;
-  justify-content: space-between;
-  gap: 15px;
+  max-width: 400px;
 }
 
 .title h1 {
-  font-size: clamp(24px, 6vw, 36px);
-  margin-bottom: 10px;
-  color: #2c7873;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #6a1b9a; /* Purple color */
   font-weight: bold;
-  word-wrap: break-word;
-  line-height: 1.3;
-  text-align: center;
 }
 
 .age-calculator h2 {
-  color: #4fb286;
-  font-size: clamp(18px, 4vw, 24px);
-  margin-bottom: 8px;
+  color: #6a1b9a; /* Purple color */
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .barra_horizontal {
   background-color: #6a1b9a;
-  height: 4px;
+  height: 3px;
   width: 180px;
-  margin-bottom: 15px;
-  border-radius: 2px;
+  margin: 0 auto 30px auto;
 }
 
 .age-calculator input[type="date"] {
@@ -57,109 +45,74 @@ body {
   border-radius: 8px;
   width: 100%;
   padding: 12px;
-  margin-bottom: 15px;
-  font-size: clamp(14px, 3vw, 16px);
-  max-width: 300px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  display: block;
 }
 
 .age-calculator button {
-  background: linear-gradient(#2c7873, #4fb286);
+  background: linear-gradient(#6a1b9a, #9c4dff);
   color: #fff;
   border: none;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 14px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: clamp(14px, 3vw, 16px);
+  font-size: 16px;
   width: 100%;
-  max-width: 300px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 .age-calculator button:hover {
-  background: linear-gradient(#4fb286, #2c7873);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.age-calculator button:active {
-  transform: translateY(0);
+  background: linear-gradient(#9c4dff, #6a1b9a);
 }
 
 .age-calculator .result {
   margin-top: 15px;
-  font-size: clamp(14px, 3vw, 18px);
-  word-wrap: break-word;
-  text-align: center;
+  font-size: 16px;
   color: #333;
   line-height: 1.5;
-  padding: 0 10px;
 }
 
-/* Improved mobile responsiveness */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .age-calculator {
-    padding: 25px 20px;
-    min-height: 380px;
-    gap: 12px;
+    padding: 30px 20px;
+  }
+  
+  .title h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .age-calculator h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
   }
   
   .barra_horizontal {
-    width: 150px;
+    margin-bottom: 25px;
+  }
+  
+  .age-calculator input[type="date"] {
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .age-calculator {
-    padding: 20px 15px;
-    min-height: 360px;
-    width: 95%;
+    padding: 25px 15px;
   }
   
   .title h1 {
-    font-size: clamp(20px, 6vw, 24px);
+    font-size: 22px;
+    margin-bottom: 15px;
   }
   
   .age-calculator input[type="date"],
   .age-calculator button {
     padding: 10px;
-  }
-  
-  .barra_horizontal {
-    width: 120px;
-  }
-}
-
-/* Landscape orientation support */
-@media (max-height: 500px) and (orientation: landscape) {
-  .age-calculator {
-    min-height: 300px;
-    padding: 15px;
-    gap: 10px;
-  }
-  
-  .title h1 {
-    margin-bottom: 5px;
-    font-size: 20px;
-  }
-  
-  .age-calculator h2 {
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  
-  .barra_horizontal {
-    height: 3px;
-    margin-bottom: 10px;
-  }
-  
-  .age-calculator input[type="date"],
-  .age-calculator button {
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .result {
-    margin-top: 10px;
+    font-size: 14px;
   }
 }
