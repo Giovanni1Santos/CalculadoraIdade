@@ -26,6 +26,7 @@ body {
   margin-bottom: 25px;
   color: #6a1b9a; /* Purple color */
   font-weight: bold;
+  text-align: center;
 }
 
 .age-calculator h2 {
@@ -35,7 +36,7 @@ body {
 }
 
 .barra_horizontal {
-  color: #0a5c0a;
+  color: #ef4ce2;
   height: 2px; /* Thinner line */
   width: 100%; /* Full width */
   margin: 0 auto 25px auto; /* Centered with space below */
