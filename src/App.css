@@ -22,14 +22,15 @@ body {
 }
 .title {
   text-align: center;
-  font-size: 24px; /* Reduzi o tamanho da fonte */
+  font-size: 28px;
   color: #6a1b9a;
   font-weight: bold;
-  margin-bottom: 25px; /* Ajuste fino no espaçamento */
-  text-transform: uppercase; /* Mantém um toque elegante */
-  letter-spacing: 1px; /* Suaviza o espaçamento */
-  text-shadow: 1px 1px 5px rgba(106, 27, 154, 0.2); /* Sombra bem sutil */
-  font-family: 'Poppins', sans-serif; /* Mantém um ar moderno */
+  margin-top: 10px; /* Adiciona espaço no topo */
+  margin-bottom: 30px; /* Mantém distância da calculadora */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(106, 27, 154, 0.2);
+  font-family: 'Poppins', sans-serif;
 }
 
 
