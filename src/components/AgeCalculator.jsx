@@ -41,7 +41,7 @@ const AgeCalculator = () => {
 
     return(
         <><div className="title">
-            <h1>Calculadora de Idade - React JS</h1>
+            <h1>Calculadora de Idade</h1>
         </div>
         
         <div className="age-calculator">

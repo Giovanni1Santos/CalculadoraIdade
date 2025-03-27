@@ -13,31 +13,35 @@ body {
 .age-calculator {
   background-color: #fff;
   border-radius: 15px;
-  padding: 40px 30px;
+  padding: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 90%;
   max-width: 400px;
+  margin-top: -20px; /* Pulls the calculator higher up */
 }
 
 .title h1 {
   font-size: 28px;
-  margin-bottom: 25px;
-  color: #6a1b9a; /* Purple color */
+  margin-bottom: 10px; /* Reduced space below h1 */
+  color: #6a1b9a;
   font-weight: bold;
+  position: relative;
+  top: -10px; /* Moves h1 higher up */
 }
 
 .age-calculator h2 {
-  color: #6a1b9a; /* Purple color */
+  color: #6a1b9a;
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 5px; /* Reduced space below h2 */
 }
 
 .barra_horizontal {
   background-color: #6a1b9a;
-  height: 3px;
-  width: 180px;
-  margin: 0 auto 30px auto;
+  height: 2px; /* Thinner line */
+  width: 100%; /* Full width */
+  margin: 0 auto 25px auto; /* Centered with space below */
+  border: none; /* Removes any default border */
 }
 
 .age-calculator input[type="date"] {
@@ -61,7 +65,7 @@ body {
   font-size: 16px;
   width: 100%;
   transition: all 0.3s ease;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .age-calculator button:hover {
@@ -78,36 +82,29 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .age-calculator {
-    padding: 30px 20px;
+    padding: 25px 20px;
+    margin-top: -15px;
   }
   
   .title h1 {
     font-size: 24px;
-    margin-bottom: 20px;
+    top: -8px;
   }
   
   .age-calculator h2 {
     font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .barra_horizontal {
-    margin-bottom: 25px;
-  }
-  
-  .age-calculator input[type="date"] {
-    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .age-calculator {
-    padding: 25px 15px;
+    padding: 20px 15px;
+    margin-top: -10px;
   }
   
   .title h1 {
     font-size: 22px;
-    margin-bottom: 15px;
+    top: -5px;
   }
   
   .age-calculator input[type="date"],
