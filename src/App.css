@@ -47,7 +47,7 @@ body {
 }
 
 .age-calculator button {
-  background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
+  background-image: linear-gradient(#2a8c76, #3fc1a6);
   color: #fff;
   border: none;
   padding: 12px;
@@ -59,7 +59,7 @@ body {
 }
 
 .age-calculator button:hover {
-  background: linear-gradient(135deg, #D8BFD8, #E6E6FA);
+  background-image: linear-gradient(#2a8c76, #3fc1a6);
 }
 
 .age-calculator .result {
