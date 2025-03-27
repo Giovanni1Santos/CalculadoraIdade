@@ -40,12 +40,10 @@ const AgeCalculator = () => {
         };
 
     return(
-        <><div className="title">
-            <h1>Calculadora de Idade</h1>
-        </div>
+       
         
         <div className="age-calculator">
-            <h2>Coloque sua data de nascimento</h2>
+            <h1>Coloque sua data de nascimento</h1>
             <div className="barra_horizontal"></div>
                 <input type="date" value={birthdate} onChange={(e) => {
                     //Garante que só seja aceito 10 caracteres no input
@@ -67,7 +65,7 @@ const AgeCalculator = () => {
                     </div>
                 )}
 
-            </div></>
+            </div>
     )
 }
 
