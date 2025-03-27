@@ -40,29 +40,32 @@ const AgeCalculator = () => {
         };
 
     return(
-        <div className="age-calculator">
+        <><div className="title">
             <h1>Calculadora de Idade - React JS</h1>
-            <input type="date" value={birthdate} onChange={(e)=>{
-                //Garante que só seja aceito 10 caracteres no input
-                if(e.target.value.length<= 10){
-                    setbirthdate(e.target.value);
-                }
-
-            }}
-            max="9999-12-31"//seta o maximo permitido para datas
-            min="0000-01-01"//seta o mínimo permitido para datas
-            />
-            {/*Botão para trigger function calculadora de idade*/ }
-            <button onClick={calculateAge}>Calcular</button>
-
-            {/*Estrutura para mostrar o resultado "display"*/}
-            {age && (
-                <div className="result">
-                    <p>Você tem {age.years} anos, {age.months} meses, e {age.days} dias de idade!</p>
-                </div>
-            )}
-            
         </div>
+        
+        <div className="age-calculator">
+                <input type="date" value={birthdate} onChange={(e) => {
+                    //Garante que só seja aceito 10 caracteres no input
+                    if (e.target.value.length <= 10) {
+                        setbirthdate(e.target.value);
+                    }
+
+                } }
+                    max="9999-12-31" //seta o maximo permitido para datas
+                    min="0000-01-01" //seta o mínimo permitido para datas
+                />
+                {/*Botão para trigger function calculadora de idade*/}
+                <button onClick={calculateAge}>Calcular</button>
+
+                {/*Estrutura para mostrar o resultado "display"*/}
+                {age && (
+                    <div className="result">
+                        <p>Você tem {age.years} anos, {age.months} meses, e {age.days} dias de idade!</p>
+                    </div>
+                )}
+
+            </div></>
     )
 }
 
