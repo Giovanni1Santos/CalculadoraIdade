@@ -20,14 +20,18 @@ body {
   max-width: 400px;
   margin-top: 20px; /* Aumentei para puxar mais para cima */
 }
-
 .title {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px; /* Reduzi o tamanho da fonte */
   color: #6a1b9a;
   font-weight: bold;
-  margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+  margin-bottom: 25px; /* Ajuste fino no espaçamento */
+  text-transform: uppercase; /* Mantém um toque elegante */
+  letter-spacing: 1px; /* Suaviza o espaçamento */
+  text-shadow: 1px 1px 5px rgba(106, 27, 154, 0.2); /* Sombra bem sutil */
+  font-family: 'Poppins', sans-serif; /* Mantém um ar moderno */
 }
+
 
 
 .age-calculator h2 {
