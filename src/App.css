@@ -20,19 +20,17 @@ body {
   max-width: 400px;
   margin-top: 20px; /* Aumentei para puxar mais para cima */
 }
+
 .title {
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   color: #6a1b9a;
   font-weight: bold;
-  margin-top: 10px; /* Adiciona espaço no topo */
-  margin-bottom: 30px; /* Mantém distância da calculadora */
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 5px rgba(106, 27, 154, 0.2);
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 8px rgba(106, 27, 154, 0.3);
   font-family: 'Poppins', sans-serif;
 }
-
 
 
 .age-calculator h2 {
