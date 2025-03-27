@@ -32,12 +32,23 @@ body {
   margin-bottom: 25px;
   -webkit-background-clip: text;
   background-clip: text;
-  color: linear-gradient(#2a8c76, #3fc1a6);
+  color: #2a8c76;
   font-weight: bold;
   word-wrap: break-word;
   line-height: 1.2;
   text-align: center;
 }
+
+.age-calculator h2{
+    font-size: 24px;
+
+}
+.barra_horizontal{
+  background-color: #993399;
+  height: 5px;
+  width: 210px;
+}
+
 
 .age-calculator input[type="date"] {
   border-radius: 10px;
